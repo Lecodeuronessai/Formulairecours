@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+:root {
+  --test: red;
+}
+
+[data-theme="dark"] {
+  --test: blue;
+}
+
+body {
+  padding: 64px 16px;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #12171d;
+  border-radius: 8px;
+  max-width: 400px;
+  padding: 16px;
+  background-color: var(--test);
+}
+
+form > img {
+  margin: auto;
+  width: 75%;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  color: rgb(203, 203, 203);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 100%;
+}
+
+input::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: transparent;
+  appearance: none;
+  margin-top: 1px;
+}
+
+input[type="checkbox"]:checked {
+  appearance: auto;
+}
+
+.confirm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.confirm > span {
+  line-height: 1.25;
+  font-size: 0.825rem;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #26669d;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all ease 1s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 23px 10px rgba(0, 0, 0, 0.2);
+}
+
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+}
+
+.message-error {
+  border: 1px solid rgba(212, 42, 0, 1);
+  color: rgb(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-success {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+a {
+  color: #2990e2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.valider {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+}

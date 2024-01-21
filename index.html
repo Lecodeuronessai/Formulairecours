@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-theme="dark">
+    <main>
+      <div class="message-error">
+        <ul></ul>
+      </div>
+
+      <div class="message-success">Formulaire Envoyé!</div>
+
+      <form action="envoi.html" method="POST" enctype="multipart/form-data">
+        <img src="img/fabric_0022_plane_600.png" alt="" />
+
+        <div class="form-content">
+          <div>
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+
+          <div class="password">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="••••••••••••"
+            />
+
+            <div class="password-icon">
+              <i data-feather="eye"></i>
+              <i data-feather="eye-off"></i>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="confirmpassword">
+              <label for="confirmpassword">Confirm password</label>
+              <input
+                type="password"
+                id="confirmpassword"
+                name="confirmpassword"
+                placeholder="••••••••••••"
+              />
+
+              <div class="confirmpassword-icon">
+                <i data-feather="eye"></i>
+                <i data-feather="eye-off"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="confirm">
+            <input type="checkbox" id="validation" />
+            <span>
+              I agree to&nbsp; <a href="">Terms of Service&nbsp;</a> and
+              <a href="">&nbsp;Privacy Policy</a>.
+            </span>
+          </div>
+
+          <button type="submit" id="submit">Register</button>
+
+          <p class="end">Already have an account ?&nbsp;<a href="">Login</a></p>
+        </div>
+      </form>
+    </main>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>

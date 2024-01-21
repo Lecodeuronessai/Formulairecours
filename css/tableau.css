@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 20px;
+}
+
+.tabs .tab-registers {
+  display: flex;
+  background-color: RGB(255, 255, 255);
+  border-radius: 4px;
+}
+
+.tabs button {
+  padding: 0.5em;
+  background-color: RGB(255, 255, 255);
+  border: none;
+  font: inherit;
+}
+
+.tabs .tab-registers button:hover {
+  cursor: pointer;
+}
+
+.tabs .tab-bodies {
+  padding: 0.5em;
+  background-color: RGB(235, 235, 235);
+  flex-grow: 1;
+  overflow-y: auto;
+  border-radius: 4px;
+  background-color: rgba(48, 140, 201, 0.562);
+}
+
+.tabs button.active-tab {
+  background-color: rgb(235, 235, 235);
+}
+
+.tab-bodies img {
+  width: 500px;
+  background-color: transparent;
+}
